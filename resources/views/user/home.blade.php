@@ -13,7 +13,7 @@
         <div class="icon">
           <i class="fas fa-comment-alt"></i>
         </div>
-        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+        <a href="/user/aduan" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
@@ -21,14 +21,14 @@
       <!-- small box -->
       <div class="small-box bg-success">
         <div class="inner">
-          <h3>0<sup style="font-size: 20px"></sup></h3>
+          <h3>{{count($countAduan)}}<sup style="font-size: 20px"></sup></h3>
 
           <p>Solusi</p>
         </div>
         <div class="icon">
             <i class="fas fa-users"></i>
         </div>
-        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+        <a href="/user/aduan" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
 </div>
@@ -80,5 +80,11 @@
         </form>
       </div>
     </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12 col-12 text-center">
+    <img src="/themeadmin/logo.png" alt="Logo" width="45%">
+  </div>
 </div>
 @endsection

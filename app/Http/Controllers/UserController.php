@@ -60,7 +60,12 @@ class UserController extends Controller
     public function respon($id)
     {
         $data = Aduan::find($id);
+        if($data->respon->count() == 0){
+            toastr()->info('Belum Ada Solusi');
+            return back();
+        }else{
+            return view('user.aduan.respon',compact('data'));
+        }
         
-        return view('user.aduan.respon',compact('data'));
     }
 }
