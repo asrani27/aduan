@@ -48,74 +48,20 @@
                     <input type="date" class="form-control" name="tanggal" value="{{\Carbon\Carbon::today()->format('Y-m-d')}}">
                   </div>
                 </div>
-
                 
                 <div class="form-group row">
                   <label class="col-sm-2 col-form-label"></label>
                   <div class="col-sm-10">
-                    <strong>IDENTITAS KIRIMAN</strong>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">No Kiriman</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="no_kiriman">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Kode Produk</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="kode_produk">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Berat </label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="berat">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Isi</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="isi">
-                  </div>
-                </div>
-                
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label"></label>
-                  <div class="col-sm-10">
-                    <strong>IDENTITAS PENGIRIM</strong>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Nama pengirim</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="nama_pengirim">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">Alamat Pengirim</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="alamat_pengirim">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label">No HP Pengirim</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" name="telp_pengirim">
-                  </div>
-                </div>
-                
-                <div class="form-group row">
-                  <label class="col-sm-2 col-form-label"></label>
-                  <div class="col-sm-10">
-                    <strong>ISI PENGADUAN</strong>
+                    <strong>PENGADUAN</strong>
                   </div>
                 </div>
                 <div class="form-group row">
                   <label class="col-sm-2 col-form-label">Jenis Aduan</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" name="jenis_aduan">
+                    <select name="jenis_aduan" class="form-control">
+                      <option value="pengaduan">Pengaduan</option>
+                      <option value="keluhan">Keluhan</option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-group row">

@@ -35,6 +35,7 @@ Route::group(['middleware' => ['auth', 'role:superadmin']], function () {
         Route::resource('pegawai', PegawaiController::class);
         
         Route::get('/customer', [KustomerController::class, 'index']);
+        Route::delete('/customer/delete/{id}', [KustomerController::class, 'destroy']);
         Route::get('/lap_aduan', [LaporanController::class, 'aduan']);
         Route::get('/lap_pegawai', [LaporanController::class, 'pegawai']);
         Route::get('/lap_kustomer', [LaporanController::class, 'kustomer']);

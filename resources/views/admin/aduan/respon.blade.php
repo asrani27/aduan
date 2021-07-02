@@ -14,60 +14,24 @@
                 <h5> Aduan Oleh {{$data->kustomer->nama}}, Tgl : {{\Carbon\Carbon::parse($data->tanggal)->format('d M Y')}}</h5>
                 <table width="100%">
                     <tr>
-                        <th>IDENTITAS KIRIMAN</th>
-                        <th></th>
-                        <th></th>
-                        <th>IDENTITAS PENGIRIM</th>
-                        <th></th>
-                        <th></th>
+                        
                         <th>DETAIL ADUAN</th>
                         <th></th>
                         <th></th>
                     </tr>
                     <tr>
-                        <td width="15%">No Kiriman</td>
-                        <td>:</td>
-                        <td>{{$data->no_kiriman}}</td>
-                        <td width="15%">Nama Pengirim</td>
-                        <td>:</td>
-                        <td>{{$data->nama_pengirim}}</td>
+                        
                         <td width="10%">Jenis</td>
                         <td>:</td>
                         <td>{{$data->jenis_aduan}}</td>
                     </tr>
                     <tr>
-                        <td>Kode Produk</td>
-                        <td>:</td>
-                        <td>{{$data->kode_produk}}</td>
-                        <td>Alamat Pengirim</td>
-                        <td>:</td>
-                        <td>{{$data->alamat_pengirim}}</td>
+                        
                         <td>Isi</td>
                         <td>:</td>
                         <td>{{$data->isi_aduan}}</td>
                     </tr>
-                    <tr>
-                        <td>Berat</td>
-                        <td>:</td>
-                        <td>{{$data->berat}}</td>
-                        <td>Telp Pengirim</td>
-                        <td>:</td>
-                        <td>{{$data->telp_pengirim}}</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Isi</td>
-                        <td>:</td>
-                        <td>{{$data->isi}}</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    
                 </table>
             </div>
             @if ($solusi == null)

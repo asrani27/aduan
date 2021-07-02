@@ -17,6 +17,7 @@
               <th>Alamat</th>
               <th>Telp</th>
               <th>Email</th>
+              <th></th>
             </tr>
             </thead>
             <tbody>
@@ -30,14 +31,14 @@
                     <td>{{$item->alamat}}</td>
                     <td>{{$item->telp}}</td>
                     <td>{{$item->Email}}</td>
-                    {{-- <td>
-                      <form action="/admin/pegawai/{{$item->id}}" method="post">
+                    <td>
+                      <form action="/admin/customer/delete/{{$item->id}}" method="post">
                         @csrf
                         @method('delete')
                         <button type="submit" class="btn btn-xs btn-danger" onclick="return confirm('yakin DI Hapus?');"><i class="fas fa-trash"></i> Delete</button>     
                       </form>
-                        <a href="/admin/pegawai/edit/{{$item->id}}" class="btn btn-xs btn-success"><i class="fas fa-edit"></i> Edit</a>
-                    </td> --}}
+                      
+                    </td>
                     </tr>
                 @endforeach
             </tbody>
